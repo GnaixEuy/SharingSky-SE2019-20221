@@ -3,9 +3,7 @@ import enumerate.Gender;
 import lombok.extern.log4j.Log4j;
 import utils.Table;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Scanner;
+import java.util.*;
 import java.util.concurrent.atomic.AtomicBoolean;
 
 
@@ -22,6 +20,7 @@ import java.util.concurrent.atomic.AtomicBoolean;
 public class StudentSystem {
 
     private static final ArrayList<Student> studentArrayList = new ArrayList<>();
+    private static final Set<Long> studentIdSet = new HashSet<Long>();
     private static final Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
@@ -45,6 +44,9 @@ public class StudentSystem {
                         break;
                     case 4:
                         showStudentInfoByStudentName();
+                        break;
+                    case 5:
+                        updateStudentInfo();
                         break;
                     case 0:
                         return;
@@ -73,6 +75,8 @@ public class StudentSystem {
         Table.print_table("2", "增加同学");
         Table.print_table("3", "删除同学");
         Table.print_table("4", "查找指定同学");
+        Table.print_table("5", "修改同学信息");
+        Table.print_table("0", "退出系统");
         System.out.println(Table.contentSb);
         System.out.print("请输入你的选项:");
         return StudentSystem.scanner.nextInt();
@@ -84,6 +88,7 @@ public class StudentSystem {
         long studentId = 201941054000L;
         for (int i = 1; i < 6; i++) {
             studentArrayList.add(new Student(studentId + i, name[name.length % i] + i, i, i % 3 == 0 ? Gender.FEMALE : i % 2 == 0 ? Gender.MALE : Gender.UNKNOWN, "软件" + i + "班"));
+            studentIdSet.add(studentId + i);
         }
     }
 
@@ -124,8 +129,16 @@ public class StudentSystem {
     private static void addStudentInfo() {
         boolean isContinue;
         do {
-            System.out.print("请输入学号:");
-            long studentId = scanner.nextLong();
+            long studentId;
+            boolean repeat = false;
+            do {
+                if (repeat) {
+                    System.out.println("学号已存在");
+                }
+                System.out.print("请输入学号:");
+                studentId = scanner.nextLong();
+                repeat = true;
+            } while (StudentSystem.studentIdSet.contains(studentId));
             scanner.nextLine();
             System.out.print("请输入姓名:");
             String name = scanner.nextLine();
@@ -158,6 +171,7 @@ public class StudentSystem {
             if (iterator.next().getStudentId() == deleteId) {
                 iterator.remove();
                 System.out.println("删除成功");
+                StudentSystem.studentIdSet.remove(deleteId);
                 return;
             }
         }
@@ -193,5 +207,24 @@ public class StudentSystem {
         } else {
             Table.clearAll();
         }
+    }
+
+    private static void updateStudentInfo() {
+        showAllStudent();
+        System.out.println("请输入你要修改的学生id");
+        long studentId = scanner.nextLong();
+        StudentSystem.studentArrayList.forEach(item -> {
+            if (item.getStudentId() == studentId) {
+                System.out.println("请输入新名字");
+                item.setName(scanner.nextLine());
+                System.out.println("请输入新班级");
+                item.setOrganization(scanner.nextLine());
+                System.out.println("请输入新年龄");
+                item.setAge(scanner.nextInt());
+                System.out.println("请输入新性别");
+                String g = scanner.nextLine();
+                item.setGender("男".equals(g) ? Gender.MALE : "女".equals(g) ? Gender.FEMALE : Gender.UNKNOWN);
+            }
+        });
     }
 }
