@@ -213,6 +213,7 @@ public class StudentSystem {
         showAllStudent();
         System.out.println("请输入你要修改的学生id");
         long studentId = scanner.nextLong();
+        scanner.nextLine();
         StudentSystem.studentArrayList.forEach(item -> {
             if (item.getStudentId() == studentId) {
                 System.out.println("请输入新名字");
