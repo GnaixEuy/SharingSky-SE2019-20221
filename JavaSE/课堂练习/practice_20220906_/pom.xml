@@ -10,7 +10,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>practice_20220903_</artifactId>
+    <artifactId>practice_20220906_</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

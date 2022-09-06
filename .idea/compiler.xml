@@ -7,10 +7,10 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="practice_20220903_" />
         <module name="homework_20220901_" />
         <module name="practice_20220902_" />
         <module name="homework_20220902_" />
+        <module name="practice_20220906_" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
