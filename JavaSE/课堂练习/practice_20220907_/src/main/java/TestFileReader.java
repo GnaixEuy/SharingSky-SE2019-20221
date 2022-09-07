@@ -13,8 +13,8 @@ import java.io.FileReader;
 public class TestFileReader {
 
     public static void main(String[] args) {
-        FileReader fileReader = null;
-        BufferedReader bufferedReader = null;
+        FileReader fileReader;
+        BufferedReader bufferedReader;
         try {
             fileReader = new FileReader("/Users/gnaixeuy/Desktop/SharingSky-SE2019-20221/JavaSE/课堂练习/practice_20220907_/src/main/resources/myInfo.txt");
             bufferedReader = new BufferedReader(fileReader);
