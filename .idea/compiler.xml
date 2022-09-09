@@ -17,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="homework_20220908_" target="11" />
       <module name="JavaSE" target="1.5" />
     </bytecodeTargetLevel>
   </component>
