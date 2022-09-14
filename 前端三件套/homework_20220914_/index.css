@@ -1,0 +1,98 @@
+header img {
+    position: relative;
+    display: flex;
+    height: 60px;
+    padding-right: 55%;
+}
+
+.header-jump {
+    display: inline-flex;
+    position: relative;
+    width: 30%;
+    margin: 0;
+    text-align: center;
+    padding: 0%;
+}
+
+.header-jump a {
+    display: inline;
+    position: relative;
+    padding: 10px;
+    font-size: large;
+    text-align: center;
+    height: 30px;
+    color: black;
+    font-style: unset;
+    text-decoration: none;
+}
+
+main {
+    display: flex;
+    margin: 10px;
+    padding-left: 2.5%;
+    width: 100%;
+}
+
+main .advertising-area {
+    padding-right: 15%;
+}
+
+main .login-area {
+    width: 27%;
+}
+
+.login-area .input-area {
+    padding: 10px;
+}
+
+.username-area,
+.password-area,
+.version-area,
+.type-area,
+.button-area {
+    padding: 15px 5px 5px;
+}
+
+.type-area,
+.button-area {
+    position: relative;
+    text-align: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.login-area .login-title h4 {
+    text-align: center;
+    font-weight: bolder;
+}
+
+.login-area {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.advertising-area {
+    display: inline;
+}
+
+footer {
+    position: absolute;
+    line-height: 100px;
+    width: 100%;
+    display: flex;
+    bottom: 0;
+    height: 60px;
+}
+
+footer img {
+    padding-left: 2.5%;
+    height: 50px;
+}
+
+footer .footer-link {
+    float: right;
+    position: relative;
+    bottom: 25px;
+    text-align: center;
+    padding-left: 33%;
+}
