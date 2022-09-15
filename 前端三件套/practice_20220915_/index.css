@@ -1,0 +1,4 @@
+.image-area img {
+    display: flex;
+    position: absolute;
+}
