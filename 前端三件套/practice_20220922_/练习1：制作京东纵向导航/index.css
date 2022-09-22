@@ -1,0 +1,17 @@
+#navigationbar {
+    border: 1px solid black;
+    background-color: #8B6969;
+    color: white;
+    margin: 0px;
+    width: 190px;
+    vertical-align: middle;
+}
+
+#navigationbar > div {
+    padding: 10px;
+}
+
+#navigationbar > div > div {
+    padding: 1px;
+    margin: 0px;
+}

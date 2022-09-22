@@ -1,0 +1,25 @@
+#announcement-div {
+    border: 1px solid slateblue;
+    width: 400px;
+    color: gray;
+    margin: 0px;
+}
+
+#title {
+    padding-left: 0px;
+    background-image: linear-gradient(slateblue, white);
+}
+
+hr {
+    padding: 0px;
+    text-align: center;
+    border: 1px dashed slateblue;
+}
+
+#announcement-div > div {
+    padding: 10px;
+}
+
+#announcement-div > div > span {
+    font-weight: 900;
+}

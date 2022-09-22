@@ -1,0 +1,41 @@
+body {
+    background-color: gray;
+}
+
+img {
+    display: inline;
+    width: 25px;
+    margin: 0px;
+    padding: 0px;
+}
+
+#navigationbar {
+    margin: 0px;
+    width: 200px;
+    color: gray;
+    background-color: white;
+}
+
+#navigationbar h2 {
+    background-color: black;
+    color: white;
+    margin-bottom: 5px;
+}
+
+#navigationbar > div > h4 {
+    display: inline;
+    margin: 0px;
+    padding: 10px;
+    padding-left: 0px;
+    text-align: start;
+    color: black;
+}
+
+#navigationbar > div > h4 + div {
+    padding: 5px 20px;
+}
+
+hr {
+    border: dashed 1px gray;
+    margin: 0px;
+}
