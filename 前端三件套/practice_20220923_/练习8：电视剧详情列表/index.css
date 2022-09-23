@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.search-input {
+    border: 1px solid black;
+    width: 25%;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.search-input > img {
+    padding: 5px;
+    vertical-align: middle;
+}
+
+.search-input > img + span {
+    font-weight: 900;
+}
+
+.recommend {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.recommend > img {
+    float: left;
+    display: inline;
+    border: 1px solid gray;
+    padding: 3px;
+}
+
+.recommend > p {
+    width: 45%;
+}
+
+.recommend p {
+    float: left;
+    width: 45%;
+    margin-left: 2%;
+    margin-top: 8px;
+    color: gray;
+}
+
+.other {
+    float: left;
+    display: inline;
+    width: 100%;
+    color: gray;
+    margin: 2%;
+}
+
+.other > p {
+    display: inline-block;
+    font-size: small;
+    margin-top: 10px;
+}
+
+.author {
+    display: inline;
+    float: right;
+    margin-right: 75%;
+}

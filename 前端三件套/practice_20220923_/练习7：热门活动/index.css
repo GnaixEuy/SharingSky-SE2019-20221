@@ -1,0 +1,34 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    float: left;
+    padding: 10px;
+    font-weight: 900;
+    margin-left: 10%;
+}
+
+h3 {
+    padding: 10px;
+    float: right;
+    color: gray;
+    font-weight: 900;
+    margin-right: 15%;
+}
+
+#photo-area {
+    float: left;
+}
+
+#photo-area > div {
+    float: inline-start;
+    width: 40%;
+    margin-left: 10%;
+    margin-top: 50px;
+}
+
+#photo-area > div > p {
+    font-size: small;
+}
