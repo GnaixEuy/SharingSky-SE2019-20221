@@ -1,0 +1,163 @@
+header > div {
+    display: inline;
+    float: right;
+    right: 10%;
+    margin: 20px;
+    background-color: #cdefe4;
+    border: 1px solid rgb(145, 198, 180);
+}
+
+.discount {
+    color: lightgreen;
+}
+
+header > div a {
+    color: gray;
+    text-decoration: none;
+}
+
+div > span {
+    color: brown;
+}
+
+header,
+main {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#logo {
+    height: 50px;
+}
+
+#discount {
+    position: absolute;
+    top: 15px;
+}
+
+.navigaiton-bar {
+    background-color: orangered;
+    width: calc(100% - 10px);
+    display: flex;
+    height: 40px;
+}
+
+.navigaiton-bar a {
+    text-align: center;
+    margin: auto;
+    flex: auto;
+    font-weight: 300;
+    color: white;
+}
+
+#slideshow img {
+    margin-top: 10px;
+    width: 100%;
+}
+
+#recommended-areas {
+    border: 1px solid greenyellow;
+}
+
+#first-recommended > div a {
+    text-decoration: none;
+    color: cornflowerblue;
+    font-size: large;
+}
+
+#recommended-areas img:first-of-type {
+    position: relative;
+    right: 15px;
+    margin-top: 10px;
+}
+
+.book-img img:first-of-type {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+
+.book-img img:last-of-type {
+    height: 350px;
+}
+
+.book-img {
+    width: 300px;
+}
+
+.book-info {
+    position: absolute;
+    border: 1px solid red;
+    width: 350px;
+    top: 400px;
+    left: 320px;
+}
+
+.book-info div {
+    padding: 6px;
+}
+
+.book-img-small {
+    position: absolute;
+    top: 400px;
+    right: 380px;
+    height: 600px;
+}
+
+.book-img-small img:first-child {
+    position: absolute;
+    left: 40px;
+    bottom: 70px;
+    width: 20px;
+}
+
+.book-info-small {
+    position: absolute;
+    width: 250px;
+    top: 400px;
+    right: 140px;
+    font-size: small;
+    padding: 5px;
+}
+
+.book-info-small a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+.book-img-small-2 {
+    position: absolute;
+    top: 550px;
+    right: 380px;
+    height: 600px;
+}
+
+.book-img-small-2 img:first-child {
+    position: absolute;
+    left: 40px;
+    bottom: 70px;
+    width: 20px;
+}
+
+.book-info-small-2 {
+    position: absolute;
+    width: 250px;
+    top: 550px;
+    right: 140px;
+    font-size: small;
+    padding: 5px;
+}
+
+.book-info-small-2 a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
