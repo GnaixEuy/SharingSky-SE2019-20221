@@ -1,0 +1,109 @@
+a {
+    text-decoration: none;
+}
+
+.caibei {
+    width: 100%;
+    height: 100px;
+    background-color: #eeeeee;
+    line-height: 100px;
+}
+
+.logo {
+    float: left;
+}
+
+li {
+    float: left;
+    list-style: none;
+    width: 90px;
+    cursor: pointer;
+}
+
+li a {
+    margin-right: 10px;
+    color: black;
+}
+
+li a:hover {
+    color: #ff0000;
+}
+
+.right img {
+    margin-left: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.right img:hover {
+    transform: scale(1.5) rotate(360deg);
+}
+
+.icon1,
+.icon2 {
+    position: absolute;
+    display: inline-block;
+    width: 38px;
+    height: 23px;
+    top: 35px;
+}
+
+.icon1 {
+    background: url("images/header_03.png") 0 0 no-repeat;
+}
+
+.icon2 {
+    background: url("images/header_07.png") 0 0 no-repeat;
+}
+
+.back:hover .icon1 {
+    animation: zhuan 1s forwards;
+}
+
+.shop:hover .icon2 {
+    animation: hua 1s forwards;
+}
+
+@keyframes zhuan {
+    0% {
+        width: 37px;
+        background: url("images/header_03.png") 0 0 no-repeat;
+    }
+
+    30% {
+        width: 45px;
+        background: url("images/header_03.png") 0 0 no-repeat;
+    }
+
+    70% {
+        width: 55px;
+        background: url("images/header_03.png") 0 0 no-repeat;
+    }
+
+    100% {
+        width: 65px;
+        background: url("images/header_05.png") 0 0 no-repeat;
+    }
+}
+
+@keyframes hua {
+    0% {
+        width: 37px;
+        background: url("images/header_07.png") 0 0 no-repeat;
+    }
+
+    30% {
+        width: 45px;
+        background: url("images/header_07.png") 0 0 no-repeat;
+    }
+
+    70% {
+        width: 55px;
+        background: url("images/header_07.png") 0 0 no-repeat;
+    }
+
+    100% {
+        width: 65px;
+        background: url("images/header_09.png") 0 0 no-repeat;
+    }
+}
