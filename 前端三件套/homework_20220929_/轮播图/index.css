@@ -1,0 +1,38 @@
+#left-button,
+#right-button {
+    position: absolute;
+}
+
+#left-button {
+    top: 50%;
+    left: 0;
+}
+
+#right-button {
+    top: 50%;
+    right: 0;
+}
+
+#nav-area {
+    position: relative;
+
+    top: -200px;
+    left: 30%;
+}
+
+#nav-area div {
+    float: left;
+    display: inline;
+    background-color: rgba(252, 0, 0, 0.617);
+    width: 80px;
+    height: 80px;
+    margin: 20px;
+    border-radius: 40px;
+    text-align: center;
+    font-size: xx-large;
+    align-items: center;
+}
+
+#img-area img {
+    width: 100%;
+}

@@ -1,0 +1,67 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <title>非缘勿扰</title>
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.1.min.js"></script>
+    <style type="text/css">
+        * {
+            padding: 0px;
+            margin: 0px;
+            font-family: Arial, "微软雅黑", "宋体";
+            line-height: 25px;
+        }
+
+        #left {
+            float: left;
+            margin: 10px;
+            width: 151px;
+            text-align: center;
+        }
+
+        #right {
+            float: left;
+            width: 320px;
+            margin: 10px;
+        }
+
+        .title {
+            font-size: 16px;
+            color: #0000ce;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<div id="left">
+    <img src="images/pic.gif"/>
+    <br/>
+    <img src="images/col.gif"/>
+</div>
+<div id="right">
+    <dl>
+        <dt>
+            <strong>非缘勿扰(共36集)</strong>
+        </dt>
+        <dd><span class="director">主演：</span>苏有朋/秦岚/傅艺伟等</dd>
+        <dd><span class="director">导演：</span>赖水清</dd>
+        <dd><span id="tag">标签：</span>苏有朋 国产电视剧 2013 连续剧</dd>
+        <dd>
+          <span>剧情：</span
+          >当代都市，大年女刘林、杨阳都在寻找自己的如意郎君，刘林偶遇陆氏房地产总裁路西诺，两人成了欢喜冤家，遭到暗恋西诺的丁娟的嫉恨。。。<a
+                href="#"
+        >点击了解更多</a
+        >
+        </dd>
+    </dl>
+</div>
+</body>
+
+<script type="text/javascript">
+    $("dt").css("color", "blue");
+    $(".director").css("font-weight", "800");
+    $("#tag").css("font-weight", "800");
+    $("#left").children()[2].onclick = () => alert("收藏成功");
+</script>
+</html>
