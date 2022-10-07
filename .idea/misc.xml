@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/JavaEE/homework_20221005_" />
+    <file type="web" url="file://$PROJECT_DIR$/JavaEE/homework_20221007_" />
+  </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
@@ -13,6 +17,9 @@
         <option value="$PROJECT_DIR$/JavaSE/课堂练习/practice_20220902_/pom.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/JavaSE/课堂练习/practice_20220906_/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaEE/homework_20221005_/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaEE/homeworkd_20221007_/pom.xml" />
+        <option value="$PROJECT_DIR$/JavaEE/homework_20221007_/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

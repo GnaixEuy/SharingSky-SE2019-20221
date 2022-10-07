@@ -1,0 +1,40 @@
+-- 创建留言板数据库
+CREATE DATABASE IF NOT EXISTS guestbook;
+
+-- 删除留言板数据库
+DROP DATABASE IF EXISTS guestbook;
+
+
+
+USE guestbook;
+
+-- 删除数据表
+DROP TABLE IF EXISTS mess;
+
+-- 创建数据表
+CREATE TABLE mess(
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT '留言编号',
+    name CHAR(20) NOT NULL COMMENT '昵称',
+    message CHAR(255) NOT NULL COMMENT '留言',
+		createtime TIMESTAMP DEFAULT CURRENT_TIMESTAMP COMMENT '留言时间'
+)ENGINE=INNODB DEFAULT CHARSET=UTF8 AUTO_INCREMENT=1001;
+
+-- 插入数据
+
+INSERT INTO `mess` VALUES (1001, '张三', '祝同学们年年有余，前程似锦', '2017-8-10 16:12:23');
+INSERT INTO `mess` VALUES (1002, '李斯', '毕业顺利，工作满意', '2017-8-10 16:12:23');
+INSERT INTO `mess` VALUES (1003, '王五', '千言万语，不如一醉', '2017-8-10 16:12:23');
+INSERT INTO `mess` VALUES (1004, '小丽', '千言万语，不如滚蛋', '2017-8-10 16:12:23');
+INSERT INTO `mess` VALUES (1005, '汤姆', '杰瑞我要抓到你了。<img src=\'images/phiz/ku.gif\'/><img src=\'images/phiz/xixi.gif\'/><img src=\'images/phiz/taikaixin.gif\'/>', '2017-8-10 16:12:56');
+INSERT INTO `mess` VALUES (1006, '杰瑞', '大家快来看白日梦。<img src=\'images/phiz/baobao.gif\'/><img src=\'images/phiz/touxiao.gif\'/><img src=\'images/phiz/jiyan.gif\'/>', '2017-8-10 16:13:22');
+
+
+-- 查看是否插入成功
+SELECT * FROM mess;
+SELECT * FROM mess WHERE id=1002;
+
+-- 删除数据
+DELETE FROM mess WHERE id=1006;
+
+-- 修改数据
+UPDATE mess SET name='老张' WHERE id=1010;
